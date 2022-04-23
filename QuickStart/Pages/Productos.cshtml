@@ -1,0 +1,49 @@
+﻿@page
+@model ProductosModel
+@{
+    ViewData["Title"] = "Productos";
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Catálogo de productos</h1>
+</div>
+
+<div style="width:300; height:400;"
+     onmouseover="hightlight1()"
+     onmouseout="removehightlight1()">
+    <img id="pro1" src="https://th-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c06528253_2.png">
+    <p>Computadora marca HP - Precio: $1200. <a href="Pedidos"> Realizar pedido </a></p>
+
+</div>
+
+<div style="width:300; height:400;"
+     onmouseover="hightlight2()"
+     onmouseout="removehightlight2()">
+    
+    <img id="pro2" src="https://www.pikpng.com/pngl/b/141-1413800_center-facing-4bx31aa-abb-clipart.png">
+    <p>Headset profesional - Precio: $200. <a href="Pedidos"> Realizar pedido </a></p>
+</div>
+
+<script language="javascript">
+   
+    function hightlight1() {
+        
+        document.getElementById("pro1").style.border = "1px solid blue";
+    }
+
+    function removehightlight1() {
+     
+        document.getElementById("pro1").style.border = "0px solid blue";
+    }
+
+    function hightlight2() {
+        
+        document.getElementById("pro2").style.border = "1px solid blue";
+    }
+    function removehightlight2() {
+        
+        document.getElementById("pro2").style.border = "0px solid blue";
+    }
+
+</script>
